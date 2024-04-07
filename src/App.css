@@ -1,0 +1,84 @@
+body{
+  background-color:var(--OffBlack);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid; /* ERA flex Cambiado a  grid */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-content: center;
+}
+
+.Perfil {
+  width: 210px;
+  height:fit-content;
+  justify-content: center;
+  padding: 30px;
+  background-color:var(--DarkGrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+
+  margin: 0 10px;
+}
+
+.Imagen {
+  display: flex;
+  padding: 10px;
+}
+.Imagen img{
+  width: 50%;
+  margin:auto;
+  border-radius: 50%;
+}
+.profile-pic {
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
+}
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+  --Green: hsl(75, 94%, 57%);
+}
+.Names{
+  height: 30px;
+  font-size: 14px;
+  font-family:"inter", sans-serif;
+  color: var(--White);
+}
+.Lugar{
+  height: 40px;
+  font-size: 11px;
+  font-family:"inter", sans-serif;
+  color:var(--Green);
+}
+.Xd{
+  height: 30px;
+  font-size: 11px;
+  font-family:"inter", sans-serif ;
+  color: var(--White);
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  padding: 13px;
+  margin: 5px;
+  background-color: var(--Grey);
+  color: var(--White);
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: var(--Green);
+  color: var(--Grey);
+}
