@@ -1,8 +1,17 @@
 .container {
     display: flex;
-    align-items: center;
-    justify-content:center ;
     flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 210px;
+    height: fit-content;
+    padding: 30px;
+    background-color: var(--DarkGrey);
 }
 
 .Imagen {
@@ -14,22 +23,47 @@
 }
 
 .Names {
-    height: 30px;
+    display: flex;
+    width: auto;
+    height: auto;
+    color: var(--White);
+    font-size: large;
+    justify-content: center;
+    margin-bottom: 9px;
+    font-family: "inter", sans-serif;
+
+    /* height: 30px;
     font-size: 14px;
     font-family: "inter", sans-serif;
-    color: var(--White);
+    color: var(--White); */
 }
 
+
 .Lugar {
-    height: 40px;
+    display: flex;
+    color:  var(--Green);
+    font-size: 11px;
+    justify-content: center;
+    font-family: "inter", sans-serif;
+
+    /* height: 40px;
     font-size: 11px;
     font-family: "inter", sans-serif;
-    color: var(--Green);
+    color: var(--Green); */
 }
 
 .Xd {
-    height: 30px;
+    display: flex;
+    width: auto;
+    font-family: "inter", sans-serif;
+    height: auto;
+    margin-top: 25px;
+    color: var(--White);
+    font-size: 11px;
+    justify-content: center;
+
+    /* height: 30px;
     font-size: 11px;
     font-family: "inter", sans-serif;
-    color: var(--White);
+    color: var(--White); */
 }

@@ -4,7 +4,7 @@ import ButtonSection from './ButtonSection.jsx'
 
 function Card() {
     return (
-        <div>
+        <div className='container'>
             <UserDetails/> 
             <ButtonSection/>
         </div>

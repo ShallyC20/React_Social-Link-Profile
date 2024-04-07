@@ -3,7 +3,7 @@ import './ButtonSection.css'
 
 function ButtonSection() {
     return (
-        <div className='container'>
+        <div >
             <div class="button-container">
                 <button >GitHub</button>
                 <button>Frontend Mentor</button>
