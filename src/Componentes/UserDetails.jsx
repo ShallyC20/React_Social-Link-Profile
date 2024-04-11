@@ -1,17 +1,14 @@
 import React from 'react'
 import './UserDetails.css';
+import Foto from '../assets/avatar-jessica.jpeg'
 
 function UserDetails() {
     return (
         <div >
 
-            <img
-                className="Imagen"
-                src="https://www.champohaircare.com/cdn/shop/articles/Curly_hair_Journal_July22_1920x2016.jpg?v=1658822549"
-                alt="image not found"
-            ></img>
+            <img className="Imagen" src={Foto}></img>
 
-            <h2 className="Names">Carla Arancibia</h2>
+            <h2 className="Names">Jessica Randall</h2>
 
             <p className="Lugar">London, United Kingdom</p>
 
