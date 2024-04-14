@@ -1,16 +1,17 @@
-import React from 'react'
-import './ButtonSection.css'
+import React from 'react';
+import './ButtonSection.css';
 
-function ButtonSection() {
+function ButtonSection({ socialLinks }) {
+    console.log(socialLinks)
     return (
-        <div class="boton-container">
-            <button >GitHub</button>
-            <button>Frontend Mentor</button>
-            <button>LinkedIn</button>
-            <button>Twitter</button>
-            <button>Instagram</button>
+        <div className="boton-container">
+            {
+                socialLinks.map(
+                    socialLinks => <button key={socialLinks.name}> {socialLinks.name} </button>
+                )
+            }
         </div>
-    )
+    );
 }
 
-export default ButtonSection
+export default ButtonSection;
