@@ -1,0 +1,47 @@
+body {
+    background-color: var(--OffBlack);
+}
+
+.container {
+    width: 100%;
+    /* Puedes ajustar el ancho según tus necesidades */
+    display: flex;
+    flex-wrap: wrap;
+    /* Para que las tarjetas se ajusten automáticamente */
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    /* Ancho de la tarjeta */
+    margin: 10px;
+    /* Espacio entre las tarjetas */
+    background-color: var(--DarkGrey);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+.Imagen {
+    width: 100px;
+    /* Ancho de la imagen */
+    height: 100px;
+    /* Altura de la imagen */
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    /* Margen inferior para separar la imagen del texto */
+}
+
+.Names {
+    color: var(--White);
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.Especie {
+    color: var(--Green);
+    font-size: 14px;
+    /* Tamaño de fuente para la especie */
+}
