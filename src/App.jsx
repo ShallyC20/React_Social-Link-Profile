@@ -5,16 +5,16 @@ function App() {
   const [characters, setCharacters] = useState([]);
 
   function generarNumerosAleatorios() {
-    const numeros = [];
-    for (let i = 0; i < 10; i++) {
-      numeros.push(Math.floor(Math.random() * 857));
+    const numeros = new Set();
+    while (numeros.size < 10) {
+      numeros.add(Math.floor(Math.random() * 830));
     }
-    numeros.toString();
-    return numeros;
+    return Array.from(numeros);
   }
+
   useEffect(() => {
     fetch(
-      "https://rickandmortyapi.com/api/character/" + generarNumerosAleatorios()
+      "https://rickandmortyapi.com/api/character/" + generarNumerosAleatorios().join(',')
     )
       .then((res) => {
         return res.json();
@@ -23,19 +23,7 @@ function App() {
         setCharacters(data);
       });
   }, []);
-  // const getApi = async () => {
-  //   try {
-  //     const res = await fetch('https://rickandmortyapi.com/api/character');
-  //     const data = await res.json();
-  //     setCharacters(data.results);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
 
-  // useEffect(() => {
-  //   getApi();
-  // }, []);
 
   return (
     <div className="container">
@@ -53,3 +41,17 @@ function App() {
   );
 }
 export default App;
+
+  // const getApi = async () => {
+  //   try {
+  //     const res = await fetch('https://rickandmortyapi.com/api/character');
+  //     const data = await res.json();
+  //     setCharacters(data.results);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   getApi();
+  // }, []);
