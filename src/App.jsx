@@ -1,57 +1,34 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import './App.css'
+import Card from './Componentes/Card';
 
 function App() {
-  const [characters, setCharacters] = useState([]);
-
-  function generarNumerosAleatorios() {
-    const numeros = new Set();
-    while (numeros.size < 10) {
-      numeros.add(Math.floor(Math.random() * 830));
-    }
-    return Array.from(numeros);
-  }
-
+  const [users, setusers] = useState([])  
   useEffect(() => {
-    fetch(
-      "https://rickandmortyapi.com/api/character/" + generarNumerosAleatorios().join(',')
-    )
-      .then((res) => {
-        return res.json();
+    fetch('https://rickandmortyapi.com/api/character/[2]')
+      .then(Respuesta => {  
+        return Respuesta.json();
       })
-      .then((data) => {
-        setCharacters(data);
-      });
-  }, []);
-
+      .then(Data => {
+        setusers(Data)
+        console.log(Data)  
+      }) 
+  }, []) 
 
   return (
-    <div className="container">
-      {characters.map((character) => (
-        <div key={character.id} className="card">
-          <h2 className="Names">{character.id}. {character.name}</h2>
-          <img className="Imagen" src={character.image} alt="" />
-          <p className="SubT">Estado - Especie:</p>
-          <p className="Espe">{character.status} - {character.species}</p>
-          <p className="SubT">Ultima ubicacion conocida:</p>
-          <p className="Local">{character.location.name}</p>
+      <div>
+        {
+          users.map((user) => (
+          <div key={user.id} className="card">
+            <h2 className="Names">{user.id}. {user.name}</h2>
+          <img className="Imagen" src={user.image} alt="" />
+          <p className="Espe">{user.status}</p>
+          <p className="Typ">{user.type}</p>
         </div>
-      ))}
-    </div>
-  );
+          ) )
+        }
+      </div>
+  )
 }
-export default App;
 
-  // const getApi = async () => {
-  //   try {
-  //     const res = await fetch('https://rickandmortyapi.com/api/character');
-  //     const data = await res.json();
-  //     setCharacters(data.results);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   getApi();
-  // }, []);
+export default App

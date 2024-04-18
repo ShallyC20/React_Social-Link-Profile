@@ -1,45 +1,24 @@
-body {
-  background-color: var(--OffBlack);
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.card h2 {
-  margin: 10px 0;
-  color: var(--White);
-  font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-weight: 800;
-  font-size: 1.51572rem;
-  line-height: 1.1;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
-}
-
-.card p {
-  margin: 2;
+.card {
+  background-color: #f0f0f0; /* Color de fondo de la tarjeta */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 20px; /* Espacio entre tarjetas */
 }
 
 .Imagen {
-  width: 50%;
-  border-radius: 50%;
+  width: 12000px; /* Tamaño de la imagen */
+  height: 150px; /* Altura igual al ancho para hacerla cuadrada */
+  object-fit: cover; /* Para que la imagen cubra el contenedor */
+  margin-bottom: 10px; /* Espacio entre la imagen y el estado */
 }
 
-.Espe, .Local {
-  font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  color: rgb(245, 245, 245);
-  -webkit-text-size-adjust: 100%;
-  text-align: left;
+.Espe {
+  text-align: center; /* Alineación centrada */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 10px; /* Espacio entre el estado y el tipo */
 }
 
-.SubT {
-  color: var(--punctuation);
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-  text-align: left;
+.Typ {
+  text-align: center; /* Alineación centrada */
+  color: #666; /* Color del texto más tenue */
 }
