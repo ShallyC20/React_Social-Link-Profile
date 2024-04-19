@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import Card from './Componentes/Card';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -26,32 +27,12 @@ function App() {
 
 
   return (
-    <div className="container">
-      {characters.map((character) => (
-        <div key={character.id} className="card">
-          <h2 className="Names">{character.id}. {character.name}</h2>
-          <img className="Imagen" src={character.image} alt="" />
-          <p className="SubT">Estado - Especie:</p>
-          <p className="Espe">{character.status} - {character.species}</p>
-          <p className="SubT">Ultima ubicacion conocida:</p>
-          <p className="Local">{character.location.name}</p>
-        </div>
+    <div className='container'>
+      {characters.map(characters => (
+        <Card key={characters.id} user={characters} />
       ))}
     </div>
+
   );
 }
 export default App;
-
-  // const getApi = async () => {
-  //   try {
-  //     const res = await fetch('https://rickandmortyapi.com/api/character');
-  //     const data = await res.json();
-  //     setCharacters(data.results);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   getApi();
-  // }, []);
