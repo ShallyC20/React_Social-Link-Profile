@@ -1,34 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import './App.css'
+import './App.css';
 import Card from './Componentes/Card';
 
 function App() {
-  const [users, setusers] = useState([])  
+  const [users, setUsers] = useState([]);
+
   useEffect(() => {
-    fetch('https://rickandmortyapi.com/api/character/[2]')
-      .then(Respuesta => {  
-        return Respuesta.json();
+    fetch('https://rickandmortyapi.com/api/character/4')
+      .then(response => response.json())
+      .then(data => {
+        setUsers([data]);
+        console.log(data);
       })
-      .then(Data => {
-        setusers(Data)
-        console.log(Data)  
-      }) 
-  }, []) 
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
 
   return (
-      <div>
-        {
-          users.map((user) => (
-          <div key={user.id} className="card">
-            <h2 className="Names">{user.id}. {user.name}</h2>
-          <img className="Imagen" src={user.image} alt="" />
-          <p className="Espe">{user.status}</p>
-          <p className="Typ">{user.type}</p>
-        </div>
-          ) )
-        }
-      </div>
-  )
+    <div>
+      {users.map(user => (
+        <Card key={user.id} user={user} />
+      ))}
+    </div>
+  );
 }
 
-export default App
+export default App;

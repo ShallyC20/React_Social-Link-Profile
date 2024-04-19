@@ -17,16 +17,6 @@
   --DarkGrey: hsl(0, 0%, 12%);
   --OffBlack: hsl(0, 0%, 8%);
   --Green: hsl(75, 94%, 57%);
-
-  --property: #ff79c6;
-  --numeric: #f08d49;
-  --string: #4cff8f;
-  --keyword: #66d9ef;
-  --punctuation: #abb2bf;
-  --background: #202329;
-  --radius: 6px;
-  --inline-background: #1b1f230d;
-  --inline-color: #476582;
 }
 
 a {

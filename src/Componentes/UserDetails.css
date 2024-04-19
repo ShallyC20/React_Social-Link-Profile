@@ -1,0 +1,43 @@
+.card {
+    width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.Imag {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+}
+
+.Esp {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--Green);
+    font-size: 20px; 
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.Typ {
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px; 
+}
+
+.Nombre {
+    margin: 10px 0;
+    color: var(--White);
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: 800;
+    font-size: 1.51572rem;
+    line-height: 1.1;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
+    text-align: center;
+}

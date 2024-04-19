@@ -1,17 +1,19 @@
 import React from 'react'
+import Episodios from './Episodios';
+import './UserDetails.css';
 
-function UserDetails({user}) {
+function UserDetails({ user }) {
     return (
-        <div >
-            {/* <img className="Imagen" src={user.avatar} alt={`avatar de ${user.name}`}></img> */}
-
-            <img className="Imagen" src={user.image} alt="" />
-            <p className="Espe">{user.status} </p>
-            <p className="Typ">{user.type} </p>
+        <div className="Ficha">
+            <h2 className="Nombre">{user.id}. {user.name}</h2>
+            <img className="Imag" src={user.image} alt="" />
+            <p className="Esp">{user.status}</p>
+            <p className="Typ">{user.type}</p>
         </div>
 
     )
 }
 
+export default UserDetails;
 
 // rcfe
