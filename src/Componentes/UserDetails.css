@@ -11,7 +11,7 @@
     object-fit: cover;
     border-radius: 8px;
 
-    margin-bottom: 10px;
+
 }
 
 .Esp {
@@ -21,14 +21,15 @@
     color: var(--Green);
     font-size: 20px; 
 
-    margin-bottom: 0;
-    margin-top: 0;
 }
 
 .Typ {
     text-align: center;
     color: #ffffff;
     font-size: 10px; 
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .Nombre {

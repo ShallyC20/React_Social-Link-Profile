@@ -1,5 +1,4 @@
 import React from 'react'
-import Episodios from './Episodios';
 import './UserDetails.css';
 
 function UserDetails({ user }) {

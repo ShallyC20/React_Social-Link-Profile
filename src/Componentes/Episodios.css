@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .episode-card {
@@ -11,8 +12,16 @@
     background-color: var(--Grey);
 }
 
+.SubT {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
 .episode-name {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
@@ -20,15 +29,14 @@
 }
 
 .episode-info {
-    font-size: 10px;
+    font-size: 9px;
     margin-bottom: 5px;
     color: white;
 }
 
-.SubT{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-    color: white;
+.Casa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
