@@ -9,12 +9,12 @@ function App() {
   useEffect(() => {
     const fetchCharacterData = async () => {
       try {
-        const response = await fetch('https://rickandmortyapi.com/api/character/1');
+        const response = await fetch('https://rickandmortyapi.com/api/character/22');
         const data = await response.json();
 
         if (data.episode && data.episode.length > 0) {
           setCharacter(data);
-          fetchEpisodes(data.episode.slice(0, 4));
+          fetchEpisodes(data.episode.slice(0, 5)); // Cambiado a los primeros 5 episodios
         } else {
           console.log("No se encontraron episodios en la respuesta.");
         }
