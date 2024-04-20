@@ -1,9 +1,3 @@
 body {
   background-color: var(--OffBlack);
 }
-
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
