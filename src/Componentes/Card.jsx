@@ -3,11 +3,11 @@ import UserDetails from './UserDetails';
 import './Card.css';
 import Episodios from './Episodios';
 
-function Card({ user }) {
+function Card({ character, episodes }) {
     return (
         <div className='Tarjetaa'>
-            <UserDetails user={user} />
-            <Episodios user={user} />
+            <UserDetails character={character} />
+            <Episodios episodes={episodes} />
         </div>
     );
 }
