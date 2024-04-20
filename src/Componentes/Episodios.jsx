@@ -1,5 +1,6 @@
 import React from 'react';
 import './Episodios.css';
+import { NavLink } from "react-router-dom";
 
 function Episodios({ episodes }) {
     return (
@@ -14,7 +15,9 @@ function Episodios({ episodes }) {
                     </div>
                 ))}
             </div>
-            <button >Home</button>
+            <NavLink to="/">
+                <button>Home</button>
+            </NavLink>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 
+
 function FichasRick() {
     const [character, setCharacter] = useState(null);
     const [episodes, setEpisodes] = useState([]);
@@ -8,7 +9,7 @@ function FichasRick() {
     useEffect(() => {
         const fetchCharacterData = async () => {
             try {
-                const response = await fetch('https://rickandmortyapi.com/api/character/22');
+                const response = await fetch('https://rickandmortyapi.com/api/character/532');
                 const data = await response.json();
 
                 if (data.episode && data.episode.length > 0) {

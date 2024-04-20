@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import FichasRick from './Componentes/FichasRick';
+import Navegacion from './Router/Navegacion';
 
 function App() {
 
   return (
     <div>
-      <FichasRick />
+      <Navegacion />
     </div>
   );
 }
