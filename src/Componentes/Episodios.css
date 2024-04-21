@@ -13,16 +13,16 @@
     margin-bottom: 10px;
 }
 
-.SubT {
+.Sub {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
-    color: white;
+    color: #747bff;
 }
 
 .episode-name {
-    font-size: 9px;
+    font-size: 10px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;

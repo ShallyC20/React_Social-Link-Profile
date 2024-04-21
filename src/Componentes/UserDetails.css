@@ -10,7 +10,7 @@
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
-
+    margin-bottom: -20px;
 
 }
 
@@ -28,7 +28,7 @@
     color: #ffffff;
     font-size: 10px; 
     
-    margin-bottom: -25px;
+    margin-bottom: -30px;
     margin-top: 10px;
 }
 

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Episodios({ episodes }) {
     return (
         <div className="Casa">
-            <h2 className="SubT">Primeros 5 Episodios</h2>
+            <h2 className="Sub">Episodios [0,4]</h2>
             <div className="episodes-container">
                 {episodes.map((episode) => (
                     <div key={episode.id} className="episode-card">
